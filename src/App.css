@@ -2,3 +2,18 @@ img {
     height: 100px;
     width: auto
 }
+
+.counter {
+    background-color: #0F5257;
+    padding: 2em;
+    display: inline-block;
+    align-items: center;
+}
+
+.country-info {
+    color: #E5625E;
+    padding: 2em;
+    background-color: #0B3142;
+    width: 1000px;
+    align-items: center;
+}

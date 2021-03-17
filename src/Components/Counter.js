@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
 import randomColor from "randomcolor"
+import Toggler from "./Toggler"
 
 
 function Counter() {
@@ -29,13 +30,19 @@ function Counter() {
   
   
     return (
-      <div>
-        <h1 style={{color: color}}>{count}</h1>
-        <button onClick={increment}>Increase!</button>
-        <button onClick={decrement}>Decrease!</button>
-        <button onClick={double}>Double!</button>
-        <button onClick={halve}>Halve!</button>
-      </div>
+      <Toggler render={(on, toggle) => (
+        <div className="counter">
+          <button onClick={toggle}>{on ? "Close" : "Open"} counter</button>
+          <nav style={{display: on ? "block" : "none"}}>
+            <h1 style={{color: color}}>{count}</h1>
+            <button onClick={increment}>Increase!</button>
+            <button onClick={decrement}>Decrease!</button>
+            <button onClick={double}>Double!</button>
+            <button onClick={halve}>Halve!</button>
+          </nav>
+        </div>
+      )}/>
+      
     )
   }
 
