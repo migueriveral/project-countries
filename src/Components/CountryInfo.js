@@ -54,7 +54,7 @@ function CountryInfo() {
                 <p>Capital: {country.capital}</p>
                 <p>Population: {country.population}</p>
                 <p>Region: {country.region}</p>
-                <p>Sub-region: {country.subRegion}</p>
+                <p>Sub-region: {country.subregion}</p>
                 <p>Area: {country.area} km</p>
             </div>
             <img src={country.flag} alt='country flag'></img>
