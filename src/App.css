@@ -1,10 +1,58 @@
+header {
+    height: 80px;
+    background-color: rgb(24, 52, 70);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+header * {
+    display: inline;
+    padding: 2em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+button {
+    color: white;
+    background-color: #C20114;
+    border-color: #C20114;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 40px;
+    margin: 0;
+    display: inline-block;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    position: fixed;
+}
+
 img {
     height: 100px;
     width: auto
 }
 
 .counter {
-    background-color: #0F5257;
     padding: 2em;
     display: inline-block;
     align-items: center;

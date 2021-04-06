@@ -13,15 +13,16 @@ function App() {
     <div>
       <Header />
       
-      <Switch>
-        <Route exact path="/">
-          <CountryInfo />
-        </Route>
-        <Route path="/counter">
-          <Counter />
-        </Route>
-      </Switch>
-
+      <div className="main">
+        <Switch>
+          <Route exact path="/">
+            <CountryInfo />
+          </Route>
+          <Route path="/counter">
+            <Counter />
+          </Route>
+        </Switch>
+      </div>
       <Footer />
     </div>
   )
