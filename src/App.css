@@ -24,7 +24,7 @@ a:visited {
     text-decoration: underline;
 }
 
-button {
+.new-country-button {
     color: white;
     background-color: #C20114;
     border-color: #C20114;
@@ -41,6 +41,11 @@ button {
     appearance: none;
     cursor: pointer;
     border: none;
+}
+
+.fill {
+    background-color: #bd4551;
+    border-color: #5f3e3e;
 }
 
 footer {

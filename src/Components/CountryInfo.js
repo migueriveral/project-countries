@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from "react"
 
 function CountryInfo() {
+    const [hovered, setHovered] = useState(false)
+
+    const classNameText = hovered ? "fill" : "line"
+
     const [loading, setLoading] = useState('idle')
     const [error, setError] = useState('')
 
@@ -58,7 +62,13 @@ function CountryInfo() {
                 <p>Area: {country.area} km</p>
             </div>
             <img src={country.flag} alt='country flag'></img>
-            <form onSubmit={fetchData}><button>New Country</button></form>
+            <form onSubmit={fetchData}>
+                <button 
+                    className={`new-country-button ${classNameText}`}
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                >New Country</button>
+                </form>
         </div>
     )
 }
